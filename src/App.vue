@@ -1,24 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <game />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import {defineComponent} from '@vue/composition-api';
 
-export default {
-  name: 'App',
+import Game from './components/Game';
+
+export default defineComponent({
   components: {
-    HelloWorld
-  }
-}
+    Game,
+  },
+});
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, "Yu Gothic Medium", "游ゴシック Medium",
+    YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
